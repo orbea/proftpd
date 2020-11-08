@@ -204,7 +204,7 @@ install-man: $(DESTDIR)$(mandir) $(DESTDIR)$(mandir)/man1 $(DESTDIR)$(mandir)/ma
 
 install-all: install-proftpd install-modules install-utils install-conf install-man install-libs install-headers install-pkgconfig install-locales $(INSTALL_DEPS)
 
-install: $(BUILD_BIN) install-all
+install: install-all
 
 depend:
 	cd src/     && $(MAKE) depend
